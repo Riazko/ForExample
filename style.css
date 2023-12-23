@@ -1,0 +1,74 @@
+h1 {
+  color: white;
+  font-weight: normal;
+  padding-top: 34px;
+  margin-top: 0px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: 'William', serif;
+  margin-bottom: 0
+}
+
+h2 {
+  margin-bottom: 24px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  margin-top: 0;
+  color: white;
+}
+h3 {
+  font-family: 'William', serif;
+margin: 0;
+font-size: 15px;
+text-transform: uppercase;
+line-height: 18px;
+font-weight: normal;
+  color: gray;
+}
+
+img {
+  width: 230px;
+  margin-bottom: 20px;
+}
+button {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: blue;
+	color: white;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+div.card {
+	margin: 50px auto;
+	padding: 20px;
+	width: 400px;
+	border: 2px solid black;
+	text-align: center;
+}
+p {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  text-align: center
+}
+
+button:hover {
+  background: -webkit-linear-gradient(to right, #5433ff, #20bdff, #a5fecb); /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+div.iwi  {
+  margin: auto;
+  text-align: center;
+  width: 500px;
+  height: 700px;
+  background: #acb6e5;
+}
+#timer {
+  font-size: 24px;
+  text-align: center;
+  margin: 50px;
+}
