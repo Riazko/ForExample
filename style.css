@@ -1,43 +1,41 @@
-h1 {
+/* style.css */
 
+h1 {
   font-weight: normal;
   font-size: 24px;
   font-style: italic;
   font-family: 'William', serif;
   margin-bottom: 0;
-  margin-right: 250px;
-  text-shadow: 4px 4px 8px gray;
-  display: inline-block;
+  margin-left: 100px; /* Отступ вправо */
+  text-shadow: 4px 4px 8px gray; /* Более выраженная обводка текста */
+  display: inline-block; /* Для применения градиента к тексту */
 }
 
 #colored-text {
-  background: linear-gradient(to right, #ff6b6b, #70db70);
-  -webkit-background-clip: text;
-  color: transparent;
+  background: linear-gradient(to right, #ff6b6b, #70db70); /* Градиент из приятного красного и зеленого цветов */
+  -webkit-background-clip: text; /* Применение градиента к тексту */
+  color: transparent; /* Прозрачный текст, чтобы видеть градиент */
 }
 
 #timer {
+  color: white;
   font-size: 24px;
+  text-align: center;
   margin: 10px;
-  font-weight: 900;
-  margin-right: 250px;
-  font-style: italic;
-  font-family: 'William', serif;
-  background: linear-gradient(to right, #ff6b6b, #70db70);
-  -webkit-background-clip: text;
-  color: transparent;
-  text-shadow: 4px 4px 8px gray;
 }
 
 .background-container {
   width: 360px; /* Уменьшено разрешение в 2 раза от исходной ширины (720px) */
   height: 640px; /* Уменьшено разрешение в 2 раза от исходной высоты (1280px) */
   background-image: url('picture/Елка.jpg');
-  background-size: cover; /* Уменьшенное изображение заполняет весь контейнер */
+  background-size: contain; /* Изображение вмещается в контейнер */
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+body{
+  margin-left: 65px;
 }
