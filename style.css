@@ -9,20 +9,30 @@ h1 {
   margin-left: 100px; /* Отступ вправо */
   text-shadow: 4px 4px 8px gray; /* Более выраженная обводка текста */
   display: inline-block; /* Для применения градиента к тексту */
+  margin-left: 20px;
 }
 
 #colored-text {
   background: linear-gradient(to right, #ff6b6b, #70db70); /* Градиент из приятного красного и зеленого цветов */
   -webkit-background-clip: text; /* Применение градиента к тексту */
   color: transparent; /* Прозрачный текст, чтобы видеть градиент */
+  text-shadow: 4px 4px 8px gray; /* Более выраженная обводка текста */
 }
 
 #timer {
-  color: white;
+  background: linear-gradient(to right, #ff6b6b, #70db70); /* Градиент из приятного красного и зеленого цветов */
+  -webkit-background-clip: text; /* Применение градиента к тексту */
+  color: transparent; /* Прозрачный текст, чтобы видеть градиент */
   font-size: 24px;
   text-align: center;
   margin: 10px;
+  text-shadow: 8px 8px 12px gray; /* Более выраженная обводка текста */
+  margin-right: 25px;
+  display: inline-block;
+  margin: 0px 0; /* Уменьшенный интервал сверху и снизу */
+  font-weight: bold; /* Жирный текст */
 }
+
 
 .background-container {
   margin: 0;
@@ -35,7 +45,6 @@ h1 {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-right: 60px;
 }
