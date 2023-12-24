@@ -25,10 +25,12 @@ h1 {
 }
 
 .background-container {
-  width: 400px; /* Уменьшено разрешение в 2 раза от исходной ширины (720px) */
-  height: 720px; /* Уменьшено разрешение в 2 раза от исходной высоты (1280px) */
+  margin: 0;
+  padding: 0;
+  width: 390px;
+  height: 700px;
   background-image: url('picture/Елка.jpg');
-  background-size: contain; /* Изображение вмещается в контейнер */
+  background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
@@ -37,6 +39,9 @@ h1 {
   align-items: center;
   margin-right: 60px;
 }
+
 body{
   background-color: black;
+  margin: 0;
+  padding: 0;
 }
