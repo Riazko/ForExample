@@ -1,4 +1,4 @@
-/* style.css
+/* style.css */
 
 h1 {
   font-weight: normal;
@@ -12,46 +12,12 @@ h1 {
   margin-left: 20px;
 }
 
-#colored-text {
-  background: linear-gradient(to right, #ff6b6b, #70db70); /* Градиент из приятного красного и зеленого цветов */
-  -webkit-background-clip: text; /* Применение градиента к тексту */
-  color: transparent; /* Прозрачный текст, чтобы видеть градиент */
-  text-shadow: 4px 4px 8px gray; /* Более выраженная обводка текста */
-}
-
-#timer {
-  background: linear-gradient(to right, #ff6b6b, #70db70); /* Градиент из приятного красного и зеленого цветов */
-  -webkit-background-clip: text; /* Применение градиента к тексту */
-  color: transparent; /* Прозрачный текст, чтобы видеть градиент */
-  font-size: 24px;
-  text-align: center;
-  margin: 10px;
-  text-shadow: 8px 8px 12px gray; /* Более выраженная обводка текста */
-  margin-right: 25px;
-  display: inline-block;
-  margin: 0px 0; /* Уменьшенный интервал сверху и снизу */
-  font-weight: bold; /* Жирный текст */
-}
-
-
-.background-container {
-  margin: 0;
-  padding: 0;
-  width: 390px;
-  height: 740px;
-  background-image: url('picture/Елка.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 60px;
-}
-
 body{
-  background-color: black;
+  background-color: grey;
   margin: 0;
   padding: 0;
 }
-*/
+
+div{
+  margin: 150;
+}
