@@ -10,14 +10,16 @@ h1 {
   text-shadow: 4px 4px 8px gray; /* Более выраженная обводка текста */
   display: inline-block; /* Для применения градиента к тексту */
   margin-left: 20px;
+  color: white;
 }
 
 body{
-  background-color: grey;
+  background-color: black;
   margin: 0;
   padding: 0;
 }
 
 div{
-  margin: 150;
+  margin: 300;
+  margin-left: 300px;
 }
