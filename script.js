@@ -1,4 +1,4 @@
-<!-- script.js -->
+/*<!-- script.js
 document.addEventListener('DOMContentLoaded', function () {
   setInterval(ojidanieNG, 1000);
 });
@@ -20,3 +20,5 @@ function ojidanieNG() {
     document.getElementById('timer').innerHTML = '<b>Поздравляем с Новым 2024 годом!!!</b>';
   }
 }
+-->
+*/
