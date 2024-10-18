@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <head>
+    <title>День Рождения</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon (1).ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            background: rgb(193,218,20);
+            background: linear-gradient(90deg, rgba(193,218,20,1) 4%, rgba(60,238,125,1) 51%, rgba(0,212,255,1) 93%);
+        }
+
+        #gift {
+            width: 300px;
+            height: 300px;
+            background-image: url('b5a87e4d-9bdb-515c-84c2-36010bd50e66.png');
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        #congrats {
+            display: none;
+            font-size: 64px;
+            color: #ff6347;
+            text-align: center;
+            white-space: pre-line;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transition: opacity 1.5s ease-in;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="gift"></div>
+    <div id="congrats">
+        <div id="line1" class="hidden">Поздравляю с 28-летием!</div>
+        <div id="line2" class="hidden">Желаю удачи, счастья</div>
+        <div id="line3" class="hidden">Всего наилучшего!</div>
+    </div>
+
+    <script>
+        const gift = document.getElementById('gift');
+        const congrats = document.getElementById('congrats');
+
+        const lines = [
+            document.getElementById('line1'),
+            document.getElementById('line2'),
+            document.getElementById('line3')
+        ];
+
+        gift.addEventListener('click', function() {
+            gift.style.display = 'none';
+            congrats.style.display = 'block';
+
+            let delay = 0;
+            lines.forEach((line, index) => {
+                setTimeout(() => {
+                    line.classList.remove('hidden');
+                    line.classList.add('fade-in');
+                }, delay * 1000);
+                delay += 1.5;
+            });
+        });
+    </script>
+
+</body>
+</html>
