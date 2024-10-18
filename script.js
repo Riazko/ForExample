@@ -1,5 +1,6 @@
-/*<!-- script.js
+/*
 document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('ny_date').innerText = 'До Нового года';
   setInterval(ojidanieNG, 1000);
 });
 
@@ -12,13 +13,12 @@ function ojidanieNG() {
   var minsLeft = Math.floor((timeLeft % (60 * 60 * 1000)) / (60 * 1000));
   var secsLeft = Math.floor((timeLeft % (60 * 1000)) / 1000);
 
-  var countdownText = daysLeft + ' дней, ' + hrsLeft + ' часов, ' + minsLeft + ' минут, ' + secsLeft + ' секунд';
+  var countdownText = 'До Нового года: ' + daysLeft + ' дней, ' + hrsLeft + ' часов, ' + minsLeft + ' минут, ' + secsLeft + ' секунд';
 
   if (timeLeft > 0) {
-    document.getElementById('timer').innerText = countdownText;
+    document.getElementById('ny_date').innerHTML = countdownText;
   } else {
-    document.getElementById('timer').innerHTML = '<b>Поздравляем с Новым 2024 годом!!!</b>';
+    document.getElementById('ny_date').innerHTML = '<b>Поздравляем с Новым 2024 годом!!!</b>';
   }
 }
--->
 */
