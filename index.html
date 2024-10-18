@@ -4,13 +4,8 @@
   <head>
     <title>День Рождения</title>
     <meta charset="UTF-8">
-    <link rel="icon" href="icon\favicon (1).ico">
+    <link rel="icon" href="favicon (1).ico">
     <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-    <link rel="manifest" href="icon/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -29,7 +24,7 @@
         #gift {
             width: 150px;
             height: 150px;
-            background-image: url('https://cdn.culture.ru/images/b5a87e4d-9bdb-515c-84c2-36010bd50e66');
+            background-image: url('b5a87e4d-9bdb-515c-84c2-36010bd50e66.png');
             background-size: cover;
             cursor: pointer;
         }
@@ -75,14 +70,13 @@
             gift.style.display = 'none';
             congrats.style.display = 'block';
 
-            // Плавное появление строк с задержкой
             let delay = 0;
             lines.forEach((line, index) => {
                 setTimeout(() => {
                     line.classList.remove('hidden');
                     line.classList.add('fade-in');
                 }, delay * 1000);
-                delay += 1.5; // Задержка между строками 1.5 секунды
+                delay += 1.5;
             });
         });
     </script>
